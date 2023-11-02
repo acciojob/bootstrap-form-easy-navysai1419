@@ -1,70 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <title>AccioJob Internship Application</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>AccioJob Internship Application</title>
 </head>
 <body>
-  <div class="container mt-5">
-    <form id="internship-application-form">
-      <div class="form-row">
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="first-name-input">First Name</label>
-            <input type="text" class="form-control" id="first-name-input" name="first_name" required>
-            <div class="invalid-feedback">
-              Please enter your first name.
+    <div class="container mt-5">
+        <form id="internship-application-form">
+            <div class="form-group">
+                <label for="first-name-input">First Name</label>
+                <input type="text" class="form-control" id="first-name-input" name="first_name" required>
+                <div class="invalid-feedback" id="first-name-error">
+                    Please enter your first name.
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="last-name-input">Last Name</label>
-            <input type="text" class="form-control" id="last-name-input" name="last_name" required>
-            <div class="invalid-feedback">
-              Please enter your last name.
+            <div class="form-group">
+                <label for="last-name-input">Last Name</label>
+                <input type="text" class="form-control" id="last-name-input" name="last_name" required>
+                <div class="invalid-feedback" id="last-name-error">
+                    Please enter your last name.
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="email-input">Email</label>
-            <input type="email" class="form-control" id="email-input" name="email" required>
-            <div class="invalid-feedback">
-              Please enter a valid email address.
+            <div class="form-group">
+                <label for="email-input">Email</label>
+                <input type="email" class="form-control" id="email-input" name="email" required>
+                <div class="invalid-feedback" id="email-error">
+                    Please enter a valid email address.
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="college-input">College Name</label>
-            <input type="text" class="form-control" id="college-input" name="college_name" required>
-            <div class="invalid-feedback">
-              Please enter your college name.
+            <div class="form-group">
+                <label for="college-input">College Name</label>
+                <input type="text" class="form-control" id="college-input" name="college_name" required>
+                <div class="invalid-feedback" id="college-error">
+                    Please enter your college name.
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="roll-no-input">Roll No</label>
-            <input type="text" class="form-control" id="roll-no-input" name="roll_no" required>
-            <div class="invalid-feedback">
-              Please enter your roll number.
+            <div class="form-group">
+                <label for="roll-no-input">Roll No</label>
+                <input type="text" class="form-control" id="roll-no-input" name="roll_no" required>
+                <div class="invalid-feedback" id="roll-no-error">
+                    Please enter your roll number.
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-group">
-            <label>Graduation Year</label>
-            <select class="form-control" name="graduation_year" required>
-              <option value="" disabled selected>Select year</option>
-              <option value="2020">2020</option>
-              <option value="2021">2021
+            <div class="form-group">
+                <label for="graduation-year-input">Graduation Year</label>
+                <select class="form-control" id="grad
