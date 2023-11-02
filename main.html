@@ -1,59 +1,70 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>AccioJob Internship Application</title>
 </head>
-
 <body>
-	<form id="internship-form">
-		<h1>Intership Form</h1>
-        <label for="first-name-input">First Name:</label>
-        <input type="text" id="first-name-input" name="first-name">
-        <span class="error" id="first-name-error"></span>
-        <br>
+  <div class="container mt-5">
+    <form id="internship-application-form">
+      <div class="form-row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="first-name-input">First Name</label>
+            <input type="text" class="form-control" id="first-name-input" name="first_name" required>
+            <div class="invalid-feedback">
+              Please enter your first name.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="last-name-input">Last Name</label>
+            <input type="text" class="form-control" id="last-name-input" name="last_name" required>
+            <div class="invalid-feedback">
+              Please enter your last name.
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <label for="last-name-input">Last Name:</label>
-        <input type="text" id="last-name-input" name="last-name">
-        <span class="error" id="last-name-error"></span>
-        <br>
+      <div class="form-row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="email-input">Email</label>
+            <input type="email" class="form-control" id="email-input" name="email" required>
+            <div class="invalid-feedback">
+              Please enter a valid email address.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="college-input">College Name</label>
+            <input type="text" class="form-control" id="college-input" name="college_name" required>
+            <div class="invalid-feedback">
+              Please enter your college name.
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <label for="email-input">Email:</label>
-        <input type="email" id="email-input" name="email">
-        <span class="error" id="email-error"></span>
-        <br>
-
-        <label for="college-input">College Name:</label>
-        <input type="text" id="college-input" name="college">
-        <span class="error" id="college-error"></span>
-        <br>
-
-        <label for="graduation-year-select">Graduation Year:</label>
-        <select id="graduation-year-select" name="graduation-year">
-            <option value="2020">2020</option>
-            <option value="2021">2021</option>
-            <option value="2022">2022</option>
-            <option value="2023">2023</option>
-        </select>
-        <br>
-
-        <label for="roll-no-input">Roll No:</label>
-        <input type="text" id="roll-no-input" name="roll-no">
-        <span class="error" id="roll-no-error"></span>
-        <br>
-
-        <label for="conditions-checkbox">I agree to the conditions:</label>
-        <input type="checkbox" id="conditions-checkbox" name="conditions">
-        <span class="error" id="conditions-error"></span>
-        <br>
-
-        <input type="submit" value="Submit">
-    </form>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
-</html>
+      <div class="form-row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="roll-no-input">Roll No</label>
+            <input type="text" class="form-control" id="roll-no-input" name="roll_no" required>
+            <div class="invalid-feedback">
+              Please enter your roll number.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Graduation Year</label>
+            <select class="form-control" name="graduation_year" required>
+              <option value="" disabled selected>Select year</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021
