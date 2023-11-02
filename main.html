@@ -46,4 +46,31 @@
             </div>
             <div class="form-group">
                 <label for="graduation-year-input">Graduation Year</label>
-                <select class="form-control" id="grad
+                <select class="form-control" id="graduation-year-input" name="graduation_year" required>
+                    <option value="" disabled selected>Select year</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+                <div class="invalid-feedback" id="graduation-year-error">
+                    Please select your graduation year.
+                </div>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="conditions-checkbox" name="accept_conditions" required>
+                <label class="form-check-label" for="conditions-checkbox">
+                    I accept the terms and conditions
+                </label>
+                <div class="invalid-feedback" id="conditions-error">
+                    You must accept the terms and conditions to submit the form.
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
